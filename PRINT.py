@@ -9,7 +9,7 @@ if i == j:
     print('ok')
 else:
     print('no')
-print("my name and sex is %s and %s" % (name , sex))
+print("my name and sex is %s and %s" % (name, sex))
 
 
 
