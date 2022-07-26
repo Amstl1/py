@@ -1,16 +1,19 @@
-class Student(object):
+g = [x * x for x in range(10)]
+z = (x * x for x in range(10))
+print(z)
 
-    __doc__ = "student"
-    count = 0
-    books = []
+from collections.abc import Iterable
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        pass
+from collections.abc import Iterator
+from functools import reduce
+print(isinstance(iter("[]"), Iterable))
 
 
-Student.books.extend(["python", "JS"])
-print(Student.books[0])
-HB = Student("1", "2")
-print("student name=:%s" % HB.name)
+def ff(x):
+    return x * x
+
+print(isinstance(ff, Iterator))
+r = map(ff, [1, 2, 3, 4, 5])
+print(list(r))
+
+print(reduce(sum, [1, 2, 3, 4]))

@@ -1,5 +1,5 @@
 from collections.abc import Iterable
-
+__name__ = 'FlashLove'
 
 ####### map ###############
 def ff(x):
