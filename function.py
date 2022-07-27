@@ -31,6 +31,7 @@ def is_odd(n):
 
 
 b = list(filter(is_odd, [1, 2, 3, 4, 5]))
+print(isinstance(b, Iterable))
 
 print(b)
 
